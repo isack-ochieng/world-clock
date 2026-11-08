@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
-  ArrowDownRight, ArrowUpRight, CalendarDays, Check, Clock3, Code2, Github,
-  Globe2, HeartPulse, MapPin, Moon, RefreshCw, Sun, Timer, TrendingUp,
+  ArrowUpRight, CalendarDays, Check, Clock3, Code2, Github,
+  Globe2, HeartPulse, MapPin, RefreshCw, Sun, Timer, TrendingUp,
 } from 'lucide-react';
 import counter from '../data/counter.json';
 import history from '../data/history.json';
-import { CITIES, formatDate, formatTime, getGreeting, getNairobiDateKey, MILESTONES } from './lib/clock';
+import { CITIES, formatDate, formatTime, getGreeting, getNairobiDateKey, getZonedParts, MILESTONES } from './lib/clock';
 
 type DayRecord = {
   date: string;
@@ -33,7 +33,7 @@ function ClockCard({ city, now }: { city: (typeof CITIES)[number]; now: Date }) 
 
 function ActivityCalendar({ now }: { now: Date }) {
   const [monthOffset, setMonthOffset] = useState(0);
-  const view = new Date(now.getFullYear(), now.getMonth() + monthOffset, 1);
+  const homeParts = getZonedParts(now);\n  const view = new Date(Number(homeParts.year), Number(homeParts.month) - 1 + monthOffset, 1);
   const year = view.getFullYear();
   const month = view.getMonth();
   const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
