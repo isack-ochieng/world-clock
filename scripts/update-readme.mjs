@@ -13,7 +13,9 @@ const history = JSON.parse(historyRaw);
 const last = counter.lastSuccessfulAt
   ? new Intl.DateTimeFormat('en-GB', { timeZone: 'Africa/Nairobi', dateStyle: 'medium', timeStyle: 'short' }).format(new Date(counter.lastSuccessfulAt)) + ' EAT'
   : 'Awaiting first heartbeat';
-const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Africa/Nairobi', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+const todayParts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Africa/Nairobi', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+const todayValues = Object.fromEntries(todayParts.map((part) => [part.type, part.value]));
+const today = `${todayValues.year}-${todayValues.month}-${todayValues.day}`;
 const todayRecord = history.days.find((day) => day.date === today);
 const completed = ['morning', 'afternoon', 'evening'].filter((key) => todayRecord?.milestones?.[key]);
 const milestoneRows = [
