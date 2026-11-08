@@ -33,7 +33,8 @@ function ClockCard({ city, now }: { city: (typeof CITIES)[number]; now: Date }) 
 
 function ActivityCalendar({ now }: { now: Date }) {
   const [monthOffset, setMonthOffset] = useState(0);
-  const homeParts = getZonedParts(now);\n  const view = new Date(Number(homeParts.year), Number(homeParts.month) - 1 + monthOffset, 1);
+  const homeParts = getZonedParts(now);
+  const view = new Date(Number(homeParts.year), Number(homeParts.month) - 1 + monthOffset, 1);
   const year = view.getFullYear();
   const month = view.getMonth();
   const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
