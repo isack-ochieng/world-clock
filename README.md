@@ -17,11 +17,11 @@ A personal world clock and GitHub activity companion, built around **Africa/Nair
 
 | Nairobi time | UTC | Milestone | Commit message |
 |---|---:|---|---|
-| 06:00 | 03:00 | Morning | Good morning 🌅 |
-| 12:00 | 09:00 | Afternoon | Good afternoon ☀️ |
-| 18:00 | 15:00 | Evening | Good evening 🌙 |
+| 06:07 | 03:07 | Morning | Good morning 🌅 |
+| 12:07 | 09:07 | Afternoon | Good afternoon ☀️ |
+| 18:07 | 15:07 | Evening | Good evening 🌙 |
 
-The scheduler uses UTC cron because GitHub Actions scheduled workflows run in UTC. The application and heartbeat script use the IANA timezone `Africa/Nairobi` for all date and period calculations.
+The scheduler uses GitHub Actions' IANA timezone support with `Africa/Nairobi`, so the schedule remains anchored to Nairobi time. The application and heartbeat script use the same timezone for all date and period calculations.
 
 ## Development
 
@@ -37,11 +37,18 @@ npm run build
 npm run preview
 ```
 
+## Live status
+
+<!-- DAYCOUNT:START -->
+## Live DayCount status
+
+The first heartbeat has not been recorded yet. This section is refreshed after each successful run.
+
+<!-- DAYCOUNT:END -->
+
 ## GitHub Actions
 
-The workflow runs three times daily and can also be started manually from the Actions tab. It updates `data/counter.json`, `data/history.json` and this README, then commits the changes using the repository's GitHub Actions identity.
-
-For contribution graph attribution, configure `GITHUB_COMMIT_EMAIL` as a repository Actions variable with an email verified on the GitHub account. If unset, the workflow uses GitHub's standard Actions bot identity, which will not attribute commits to a personal account.
+The workflow runs at 06:07, 12:07 and 18:07 Africa/Nairobi time, and can also be started manually from the Actions tab. The seven-minute offset avoids scheduling exactly on the hour, when GitHub reports higher workflow queue load. It updates `data/counter.json`, `data/history.json` and this README, then commits using the scheduled workflow actor's GitHub noreply email. Keep your GitHub account as the actor that last edits the workflow schedule, and ensure its noreply address is enabled.
 
 ## Deployment
 
