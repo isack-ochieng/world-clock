@@ -40,7 +40,7 @@ export function getGreeting(date: Date) {
   if (hour >= 5 && hour < 12) return { text: 'Good morning', emoji: '🌅', note: 'A new day is yours to build.' };
   if (hour >= 12 && hour < 17) return { text: 'Good afternoon', emoji: '☀️', note: 'Keep the momentum going.' };
   if (hour >= 17 && hour < 21) return { text: 'Good evening', emoji: '🌙', note: 'Another day, well counted.' };
-  return { text: 'Working late?', emoji: '✦', note: 'The world keeps turning. So do you.' };
+  return { text: 'Good evening', emoji: '🌙', note: 'The world keeps turning. So do you.' };
 }
 
 export function formatTime(date: Date, timeZone: string) {
