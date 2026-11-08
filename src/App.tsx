@@ -65,7 +65,6 @@ function ActivityCalendar({ now }: { now: Date }) {
           if (!day) return <span className="calendar-empty" key={`empty-${index}`} />;
           const key = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
           const record = dayMap.get(key);
-          const completed = MILESTONES.filter((milestone) => record?.milestones?.[milestone.key]).length;
           return (
             <div key={key} className={`calendar-day ${key === todayKey ? 'today' : ''} ${completed ? 'has-activity' : ''}`}>
               <span>{day}</span>
