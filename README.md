@@ -42,7 +42,23 @@ npm run preview
 <!-- DAYCOUNT:START -->
 ## Live DayCount status
 
-The first heartbeat has not been recorded yet. This section is refreshed after each successful run.
+| Metric | Current value |
+|---|---:|
+| Active contribution days | **1** |
+| Current consecutive-day streak | **1 days** |
+| Longest streak | **1 days** |
+| Total successful heartbeats | **1** |
+| Last successful heartbeat | 8 Nov 2026, 22:36 EAT |
+
+### Today's Nairobi milestones — 2026-11-08
+
+| Moment | Scheduled time | Status |
+|---|---:|---|
+| 🌅 Morning | 06:00 EAT | ◻️ Pending |
+| ☀️ Afternoon | 12:00 EAT | ◻️ Pending |
+| 🌙 Evening | 18:00 EAT | ✅ Completed |
+
+**Today:** 1/3 milestones completed · **Timezone:** Africa/Nairobi (EAT, UTC+3)
 
 <!-- DAYCOUNT:END -->
 
