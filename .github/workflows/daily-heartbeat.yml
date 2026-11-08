@@ -36,6 +36,7 @@ jobs:
       MILESTONE: ${{ inputs.milestone || 'auto' }}
       GITHUB_ACTOR: ${{ github.actor }}
       GITHUB_ACTOR_ID: ${{ github.actor_id }}
+      TARGET_BRANCH: ${{ github.event.repository.default_branch }}
     steps:
       - name: Check out the default branch
         uses: actions/checkout@v4
@@ -64,4 +65,4 @@ jobs:
             exit 0
           fi
           git commit -m "$COMMIT_MESSAGE"
-          git push origin HEAD:"${GITHUB_REF_NAME:-main}"
+          git push origin HEAD:"$TARGET_BRANCH"
