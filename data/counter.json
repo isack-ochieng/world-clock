@@ -1,0 +1,11 @@
+{
+  "timezone": "Africa/Nairobi",
+  "totalMilestones": 0,
+  "totalDays": 0,
+  "currentStreak": 0,
+  "longestStreak": 0,
+  "lastSuccessfulDate": null,
+  "lastSuccessfulAt": null,
+  "lastMilestone": null,
+  "milestoneCounts": { "morning": 0, "afternoon": 0, "evening": 0 }
+}
