@@ -67,6 +67,10 @@
         "evening": {
           "completedAt": "2026-11-13T00:49:42+03:00",
           "label": "Good evening"
+        },
+        "afternoon": {
+          "completedAt": "2026-11-13T13:50:20+03:00",
+          "label": "Good afternoon"
         }
       }
     }
