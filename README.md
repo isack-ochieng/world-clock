@@ -44,21 +44,21 @@ npm run preview
 
 | Metric | Current value |
 |---|---:|
-| Active contribution days | **9** |
-| Current consecutive-day streak | **9 days** |
-| Longest streak | **9 days** |
-| Total successful heartbeats | **17** |
-| Last successful heartbeat | 16 Nov 2026, 22:30 EAT |
+| Active contribution days | **10** |
+| Current consecutive-day streak | **10 days** |
+| Longest streak | **10 days** |
+| Total successful heartbeats | **18** |
+| Last successful heartbeat | 17 Nov 2026, 02:43 EAT |
 
-### Today's Nairobi milestones — 2026-11-16
+### Today's Nairobi milestones — 2026-11-17
 
 | Moment | Scheduled time | Status |
 |---|---:|---|
 | 🌅 Morning | 06:00 EAT | ◻️ Pending |
-| ☀️ Afternoon | 12:00 EAT | ✅ Completed |
+| ☀️ Afternoon | 12:00 EAT | ◻️ Pending |
 | 🌙 Evening | 18:00 EAT | ✅ Completed |
 
-**Today:** 2/3 milestones completed · **Timezone:** Africa/Nairobi (EAT, UTC+3)
+**Today:** 1/3 milestones completed · **Timezone:** Africa/Nairobi (EAT, UTC+3)
 
 <!-- DAYCOUNT:END -->
 
