@@ -1,15 +1,15 @@
 {
   "timezone": "Africa/Nairobi",
-  "totalMilestones": 20,
+  "totalMilestones": 21,
   "totalDays": 11,
   "currentStreak": 11,
   "longestStreak": 11,
   "lastSuccessfulDate": "2026-11-18",
-  "lastSuccessfulAt": "2026-11-18T01:51:45+03:00",
-  "lastMilestone": "evening",
+  "lastSuccessfulAt": "2026-11-18T14:29:25+03:00",
+  "lastMilestone": "afternoon",
   "milestoneCounts": {
     "morning": 0,
-    "afternoon": 9,
+    "afternoon": 10,
     "evening": 11
   }
 }
