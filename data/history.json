@@ -190,6 +190,15 @@
           "label": "Good evening"
         }
       }
+    },
+    {
+      "date": "2026-11-23",
+      "milestones": {
+        "evening": {
+          "completedAt": "2026-11-23T00:00:21+03:00",
+          "label": "Good evening"
+        }
+      }
     }
   ]
 }
